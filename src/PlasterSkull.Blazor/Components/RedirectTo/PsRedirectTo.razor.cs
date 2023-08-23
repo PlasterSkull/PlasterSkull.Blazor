@@ -1,6 +1,6 @@
 ﻿namespace PlasterSkull.Blazor;
 
-public class RedirectTo : ComponentBase
+public class PsRedirectTo : ComponentBase
 {
     #region Params
 
