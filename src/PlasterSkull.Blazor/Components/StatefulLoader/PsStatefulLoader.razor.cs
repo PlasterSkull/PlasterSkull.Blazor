@@ -1,6 +1,6 @@
 namespace PlasterSkull.Blazor;
 
-public partial class StatefulLoader : ComponentBase
+public partial class PsStatefulLoader : ComponentBase
 {
     #region Params
 

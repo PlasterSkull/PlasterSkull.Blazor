@@ -1,6 +1,6 @@
 ﻿namespace PlasterSkull.Blazor;
 
-public static class StatefulLoaderHelper
+public static class PsStatefulLoaderHelper
 {
     public static bool IsNoDataState(this LoaderState LoaderState)
         => LoaderState switch
