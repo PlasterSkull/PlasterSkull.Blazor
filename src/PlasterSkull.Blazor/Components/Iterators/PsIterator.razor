@@ -1,0 +1,12 @@
+﻿@namespace PlasterSkull.Blazor
+
+@inherits ComponentBase
+
+@typeparam T
+
+<PsCondition Evaluation="@_canIterateItems">
+    @foreach (T item in Items!)
+    {
+        @ChildContent!.Invoke(item)
+    }
+</PsCondition>

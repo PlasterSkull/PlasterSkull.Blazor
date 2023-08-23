@@ -1,0 +1,19 @@
+﻿@namespace PlasterSkull.Blazor
+
+@inherits ComponentBase
+
+@if (Evaluation)
+{
+    if (ChildContent != null && NotMatch == null && Match == null)
+    {
+        @ChildContent
+    }
+    else
+    {
+        @Match
+    }
+}
+else
+{
+    @NotMatch
+}

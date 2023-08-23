@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>PlasterSkull.Blazor</Title>
+    <Version>0.1</Version>
+    <Authors>PlasterSkull</Authors>
+    <Company>PlasterSkull</Company>
+    <Description>Extensions for Blazor</Description>
+    <PackageProjectUrl>https://github.com/PlasterSkull/PlasterSkull.Blazor</PackageProjectUrl>
+    <Copyright>PlasterSkull</Copyright>
+    <RepositoryUrl>https://github.com/PlasterSkull/PlasterSkull.Blazor</RepositoryUrl>
+    <PackageTags>Blazor, Extensions</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+    <PackageReference Include="MudBlazor" Version="6.9.0" />
+  </ItemGroup>
+
+</Project>
