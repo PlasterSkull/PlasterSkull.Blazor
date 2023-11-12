@@ -1,5 +1,3 @@
-
-
 namespace PlasterSkull.Blazor;
 
 public partial class PsIndexedIterator<T> : ComponentBase
@@ -13,11 +11,11 @@ public partial class PsIndexedIterator<T> : ComponentBase
 
     #region UI Fields
 
-    private List<PsIndexedIteratorItem<T>> _items = new();
+    private List<PsIndexedIteratorItem<T>> _items = [];
 
-    private bool _canIterateItems
-        => _items?.Count > 0
-        && ChildContent is not null;
+    private bool _canIterateItems =>
+        _items?.Count > 0 &&
+        ChildContent is not null;
 
     #endregion
 
@@ -32,7 +30,8 @@ public partial class PsIndexedIterator<T> : ComponentBase
 
         var listOfItems = Items.ToList();
 
-        _items = Enumerable.Range(0, listOfItems.Count)
+        _items = Enumerable
+            .Range(0, listOfItems.Count)
             .Select(index => new PsIndexedIteratorItem<T>
             {
                 Value = listOfItems[index],

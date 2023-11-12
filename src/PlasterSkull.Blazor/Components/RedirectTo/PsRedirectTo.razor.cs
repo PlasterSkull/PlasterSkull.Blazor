@@ -14,6 +14,5 @@ public class PsRedirectTo : ComponentBase
 
     #endregion
 
-    protected override void OnInitialized()
-        => _navigationManager.NavigateTo(Uri);
+    protected override void OnInitialized() => _navigationManager.NavigateTo(Uri);
 }

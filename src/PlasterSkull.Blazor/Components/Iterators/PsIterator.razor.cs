@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Components;
-
 namespace PlasterSkull.Blazor;
 
 public partial class PsIterator<T> : ComponentBase
@@ -13,9 +11,9 @@ public partial class PsIterator<T> : ComponentBase
 
     #region UI Fields
 
-    private bool _canIterateItems
-        => Items?.Count() > 0
-        && ChildContent is not null;
+    private bool _canIterateItems =>
+        Items?.Count() > 0 &&
+        ChildContent is not null;
 
     #endregion
 }

@@ -4,7 +4,7 @@ public enum LoaderState
 {
     NotTriggered,
     Loading,
-    Content,
     NoData,
+    Content,
     Error,
 }

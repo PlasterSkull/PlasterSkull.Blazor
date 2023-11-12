@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34004.107
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BD5F5D78-B451-4814-A165-AF1953CCD542}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.config\dotnet-tools.json = .config\dotnet-tools.json
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{BABFDEFD-4D5A-42BC-A77B-0E0FE1F314CA}"
 EndProject

@@ -2,20 +2,20 @@
 
 public static class PsStatefulLoaderHelper
 {
-    public static bool IsNoDataState(this LoaderState LoaderState)
-        => LoaderState switch
+    public static bool IsNoDataState(this LoaderState LoaderState) =>
+        LoaderState switch
         {
-            { } when LoaderState is LoaderState.NotTriggered or LoaderState.NoData => true,
+            _ when LoaderState is LoaderState.NotTriggered or LoaderState.NoData => true,
             _ => false,
         };
 
-    public static LoaderState HandleLoaderStates(params LoaderState[] LoaderStates)
-        => LoaderStates switch
+    public static LoaderState HandleLoaderStates(params LoaderState[] LoaderStates) =>
+        LoaderStates switch
         {
-            { } when LoaderStates.All(x => x == LoaderState.Content) => LoaderState.Content,
-            { } when LoaderStates.All(x => x == LoaderState.NoData) => LoaderState.NoData,
-            { } when LoaderStates.All(x => x == LoaderState.NotTriggered) => LoaderState.NotTriggered,
-            { } when LoaderStates.Any(x => x == LoaderState.Error) => LoaderState.Error,
+            _ when LoaderStates.All(x => x == LoaderState.Content) => LoaderState.Content,
+            _ when LoaderStates.All(x => x == LoaderState.NoData) => LoaderState.NoData,
+            _ when LoaderStates.All(x => x == LoaderState.NotTriggered) => LoaderState.NotTriggered,
+            _ when LoaderStates.Any(x => x == LoaderState.Error) => LoaderState.Error,
             _ => LoaderState.Loading,
         };
 
@@ -25,8 +25,8 @@ public static class PsStatefulLoaderHelper
 
         return loaderStateResult switch
         {
-            { } when loaderStateResult == LoaderState.Content && func() => LoaderState.Content,
-            { } when loaderStateResult != LoaderState.Content => loaderStateResult,
+            _ when loaderStateResult == LoaderState.Content && func() => LoaderState.Content,
+            _ when loaderStateResult != LoaderState.Content => loaderStateResult,
             _ => LoaderState.Loading
         };
     }
