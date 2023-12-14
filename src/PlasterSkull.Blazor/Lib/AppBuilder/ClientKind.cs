@@ -1,12 +1,12 @@
 ﻿namespace PlasterSkull.Blazor;
 
-public enum ClientAppPlatform
+public enum ClientKind
 {
-    Web,
-    Windows,
+    Unknown,
+    Wasm,
     Android,
-    IOS,
+    iOS,
+    Windows,
     MacCatalyst,
     Tizen,
-    Unknown,
 }

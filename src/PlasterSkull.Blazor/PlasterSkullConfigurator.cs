@@ -1,4 +1,6 @@
-﻿namespace PlasterSkull.Blazor;
+﻿using Microsoft.Extensions.DependencyInjection;
+
+namespace PlasterSkull.Blazor;
 
 public static class PlasterSkullConfigurator
 {
@@ -7,8 +9,8 @@ public static class PlasterSkullConfigurator
     public static void SetShowRenderInfoState(bool visible) =>
         ShowRenderInfoGlobalFlag = visible;
 
-    public static ClientAppBuilder AddPlasterBlazor(this ClientAppBuilder appBuilder)
+    public static IServiceCollection AddPlasterBlazor(this IServiceCollection services)
     {
-        return appBuilder;
+        return services;
     }
 }

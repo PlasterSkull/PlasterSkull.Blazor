@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>PlasterSkull.Blazor.Wasm</Title>
+    <Version>0.1.5</Version>
+    <Authors>PlasterSkull</Authors>
+    <Company>PlasterSkull</Company>
+    <Description>Extensions for Blazor Wasm</Description>
+    <PackageProjectUrl>https://github.com/PlasterSkull/PlasterSkull.Blazor</PackageProjectUrl>
+    <Copyright>PlasterSkull</Copyright>
+    <RepositoryUrl>https://github.com/PlasterSkull/PlasterSkull.Blazor</RepositoryUrl>
+    <PackageTags>Blazor, Wasm, Extensions</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PlasterSkull.Blazor\PlasterSkull.Blazor.csproj" />
+  </ItemGroup>
+
+</Project>

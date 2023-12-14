@@ -1,5 +1,4 @@
-﻿using MudBlazor.Utilities;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
 namespace PlasterSkull.Blazor;
 
@@ -104,7 +103,7 @@ public abstract class PsComponentBase : ComponentBase, IHandleEvent, IDisposable
         _customRootClassName = rootClassName;
     }
 
-    protected void ConfigureOverrideHandleEventBehavior(bool @override)
+    protected void ConfigureOverrideHandleEventBehavior(bool @override = true)
     {
         _overrideHandleEventBehavior = @override;
     }

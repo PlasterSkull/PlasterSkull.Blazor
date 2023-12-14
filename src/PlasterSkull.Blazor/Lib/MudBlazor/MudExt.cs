@@ -1,8 +1,6 @@
-﻿using MudBlazor.Utilities;
+﻿namespace PlasterSkull.Blazor;
 
-namespace PlasterSkull.Blazor;
-
-public static class MudExtensions
+public static class MudExt
 {
     #region Color
 
