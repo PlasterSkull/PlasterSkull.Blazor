@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.Hosting;
-using System;
 
-namespace PlasterSkull.Blazor;
+namespace PlasterSkull.Core;
 
 public sealed record HostInfo
 {

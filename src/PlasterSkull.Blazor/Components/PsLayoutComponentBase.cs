@@ -2,7 +2,7 @@
 
 namespace PlasterSkull.Blazor;
 
-public abstract class PsComponentBase : ComponentBase, IHandleEvent, IDisposable
+public abstract class PsLayoutComponentBase : LayoutComponentBase, IHandleEvent, IDisposable
 {
     #region Params
 

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Maui.Devices;
 using Microsoft.Maui.Hosting;
+using PlasterSkull.Core;
 
 namespace PlasterSkull.Blazor.Maui;
 

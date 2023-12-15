@@ -1,4 +1,4 @@
-﻿namespace PlasterSkull.Blazor;
+﻿namespace PlasterSkull.Core;
 
 public static class AppKindExt
 {

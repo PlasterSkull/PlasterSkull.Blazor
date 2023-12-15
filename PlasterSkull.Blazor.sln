@@ -13,9 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{BABFDE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlasterSkull.Blazor", "src\PlasterSkull.Blazor\PlasterSkull.Blazor.csproj", "{5CD9CB56-A159-467E-B1CD-A2418E5671B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlasterSkull.Blazor.Wasm", "src\PlasterSkull.Blazor.Wasm\PlasterSkull.Blazor.Wasm.csproj", "{4F88ED5A-0290-429E-8890-DA04D15203A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlasterSkull.Blazor.Wasm", "src\PlasterSkull.Blazor.Wasm\PlasterSkull.Blazor.Wasm.csproj", "{4F88ED5A-0290-429E-8890-DA04D15203A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlasterSkull.Blazor.Maui", "src\PlasterSkull.Blazor.Maui\PlasterSkull.Blazor.Maui.csproj", "{A587D4F4-F20D-41B4-AB87-CC3CBA9FFD82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlasterSkull.Blazor.Maui", "src\PlasterSkull.Blazor.Maui\PlasterSkull.Blazor.Maui.csproj", "{A587D4F4-F20D-41B4-AB87-CC3CBA9FFD82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlasterSkull.Core", "src\PlasterSkull.Core\PlasterSkull.Core.csproj", "{2AF38CF9-DF4F-435F-A462-F8BD5B1AFE61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{A587D4F4-F20D-41B4-AB87-CC3CBA9FFD82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A587D4F4-F20D-41B4-AB87-CC3CBA9FFD82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A587D4F4-F20D-41B4-AB87-CC3CBA9FFD82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF38CF9-DF4F-435F-A462-F8BD5B1AFE61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF38CF9-DF4F-435F-A462-F8BD5B1AFE61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF38CF9-DF4F-435F-A462-F8BD5B1AFE61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF38CF9-DF4F-435F-A462-F8BD5B1AFE61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{5CD9CB56-A159-467E-B1CD-A2418E5671B9} = {BABFDEFD-4D5A-42BC-A77B-0E0FE1F314CA}
 		{4F88ED5A-0290-429E-8890-DA04D15203A8} = {BABFDEFD-4D5A-42BC-A77B-0E0FE1F314CA}
 		{A587D4F4-F20D-41B4-AB87-CC3CBA9FFD82} = {BABFDEFD-4D5A-42BC-A77B-0E0FE1F314CA}
+		{2AF38CF9-DF4F-435F-A462-F8BD5B1AFE61} = {BABFDEFD-4D5A-42BC-A77B-0E0FE1F314CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3F8BB9B3-6CA3-4878-B416-F5F1DCFFD782}
