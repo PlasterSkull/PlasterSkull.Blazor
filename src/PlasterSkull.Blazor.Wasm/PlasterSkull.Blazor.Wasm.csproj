@@ -4,7 +4,6 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>PlasterSkull.Blazor.Wasm</Title>
     <Version>0.1.8</Version>
